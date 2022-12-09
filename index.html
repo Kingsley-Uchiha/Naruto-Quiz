@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Naruto Quiz</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='dependencies/bootstrap/css/bootstrap.min.css'>
+</head>
+<body>
+    <div class="intro py-3 bg-warning text-center">
+        <div class="container">
+            <h2 class="text-light display-3 my-4">Naruto Quiz</h2>
+        </div>
+    </div>
+
+    <div class="result py-4 d-none text-center bg-warning">
+        <div class="container lead text-light">
+            <p>You are <span class="text-uppercase display-4 p-3">0%</span> Naruto fan</p>
+        </div>
+    </div>
+
+    <div class="quiz py-4">
+        <div class="container">
+            <h2 class="my-5 text-white">Let's get it started ya know...</h2>
+
+            <form class="quiz-form border-top border-3 border-warning text-light p-4">
+                <div class="my-5">
+                    <p class="lead fw-normal">1. What is Naruto's favourite food?</p>
+                    <label for="A1" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q1" id="A1" value="A">
+                        <div class="form-check-label">Barbeque</div>
+                    </label>
+                    <label for="B1" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q1" id="B1" value="B">
+                        <div class="form-check-label">Ramen</div>
+                    </label>
+                </div>
+
+                <div class="my-5">
+                    <p class="lead fw-normal">2. What is the first jutsu Naruto learned?</p>
+                    <label for="A2" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q2" id="A2" value="A">
+                        <div class="form-check-label">Shadow clone jutsu</div>
+                    </label>
+                    <label for="B2" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q2" id="B2" value="B">
+                        <div class="form-check-label">Sexy jutsu</div>
+                    </label>
+                    <label for="C2" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q2" id="C2" value="C">
+                        <div class="form-check-label">Rassengan</div>
+                    </label>
+                </div>
+
+                <div class="my-5">
+                    <p class="lead fw-normal">3. Naruto is a reincarnation of one of them</p>
+                    <label for="A3" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q3" id="A3" value="A">
+                        <div class="form-check-label">Minato</div>
+                    </label>
+                    <label for="B3" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q3" id="B3" value="B">
+                        <div class="form-check-label">Sage of 6 paths</div>
+                    </label>
+                    <label for="C3" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q3" id="C3" value="C">
+                        <div class="form-check-label">Asura</div>
+                    </label>
+                </div>
+
+                <div class="my-5">
+                    <p class="lead fw-normal">4. What tailed beast does Naruto hold in him?</p>
+                    <label for="A4" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q4" id="A4" value="A">
+                        <div class="form-check-label">10 tails</div>
+                    </label>
+                    <label for="B4" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q4" id="B4" value="B">
+                        <div class="form-check-label">12 tails</div>
+                    </label>
+                    <label for="C4" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q4" id="C4" value="C">
+                        <div class="form-check-label">9 tails</div>
+                    </label>
+                </div>
+
+                <div class="my-5">
+                    <p class="lead fw-normal">5. Who is Naruto's mother?</p>
+                    <label for="A5" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q5" id="A5" value="A">
+                        <div class="form-check-label">Tsunade</div>
+                    </label>
+                    <label for="B5" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q5" id="B5" value="B">
+                        <div class="form-check-label">Sakura</div>
+                    </label>
+                    <label for="C5" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q5" id="C5" value="C">
+                        <div class="form-check-label">Kushina</div>
+                    </label>
+                </div>
+
+                <div class="my-5">
+                    <p class="lead fw-normal">6. What is Naruto's ninja way?</p>
+                    <label for="A6" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q6" id="A6" value="A">
+                        <div class="form-check-label">I'll never go back on my word</div>
+                    </label>
+                    <label for="B6" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q6" id="B6" value="B">
+                        <div class="form-check-label">I'll bring Sasuke back, that's a promise</div>
+                    </label>
+                    <label for="C6" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q6" id="C6" value="C">
+                        <div class="form-check-label">I'll become the greatest Hokage</div>
+                    </label>
+                </div>
+
+                <div class="my-5">
+                    <p class="lead fw-normal">7. Who is Naruto's best friend?</p>
+                    <label for="A7" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q7" id="A7" value="A">
+                        <div class="form-check-label">Konohamaru</div>
+                    </label>
+                    <label for="B7" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q7" id="B7" value="B">
+                        <div class="form-check-label">Sasuke</div>
+                    </label>
+                    <label for="C7" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q7" id="C7" value="C">
+                        <div class="form-check-label">Luffy</div>
+                    </label>
+                </div>
+
+                <div class="my-5">
+                    <p class="lead fw-normal">8. Who killed Naruto's parents?</p>
+                    <label for="A8" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q8" id="A8" value="A">
+                        <div class="form-check-label">Obito</div>
+                    </label>
+                    <label for="B8" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q8" id="B8" value="B">
+                        <div class="form-check-label">Killer Bee</div>
+                    </label>
+                    <label for="C8" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q8" id="C8" value="C">
+                        <div class="form-check-label">Kurama</div>
+                    </label>
+                </div>
+
+                <div class="my-5">
+                    <p class="lead fw-normal">9. What is Naruto's strongest jutsu?</p>
+                    <label for="A9" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q9" id="A9" value="A">
+                        <div class="form-check-label">Sage art: Massive rassengan barrage</div>
+                    </label>
+                    <label for="B9" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q9" id="B9" value="B">
+                        <div class="form-check-label">Tailed beast bomb</div>
+                    </label>
+                    <label for="C9" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q9" id="C9" value="C">
+                        <div class="form-check-label">Six paths: Planetary rassenshuruken</div>
+                    </label>
+                </div>
+
+                <div class="my-5">
+                    <p class="lead fw-normal">10. What is Naruto's birthday?</p>
+                    <label for="A10" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q10" id="A10" value="A">
+                        <div class="form-check-label">January 1</div>
+                    </label>
+                    <label for="B10" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q10" id="B10" value="B">
+                        <div class="form-check-label">October 10</div>
+                    </label>
+                    <label for="C10" class="form-check my-2 btn-light d-inline-flex py-1 px-3 gap-2 rounded">
+                        <input type="radio" name="q10" id="C10" value="C">
+                        <div class="form-check-label">December 25</div>
+                    </label>
+                </div>
+
+                <div class="text-center">
+                    <input type="submit" class="btn btn-warning px-5 fs-4">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <style>
+        .quiz {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/622959.jpg);
+            background-size: cover;
+            background-position: 0 0;
+            background-attachment: fixed;
+        }
+    </style>
+
+    <script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+    <script src='app.js'></script>
+</body>
+</html>
